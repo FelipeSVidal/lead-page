@@ -1,0 +1,162 @@
+body {
+  overflow-x: hidden;
+  background-color: #f7f3f2;
+}
+
+#logo {
+  padding-top: 17px;
+}
+#logo > img {
+  height: 90%;
+  width: 90%;
+}
+
+#about {
+  width: 100%;
+}
+
+.wr-about {
+  height: 670px;
+  background-image: url("./images/fundo-about.png");
+}
+
+#about-t-1 {
+  padding-top: 25px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#about-t-2 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.video {
+  position: absolute;
+  width: 970px;
+  height: 545px;
+  left: 235px;
+  top: 395px;
+  z-index: 100000;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.video > video {
+  width: 100%;
+  height: 100%;
+}
+
+#entregas {
+  padding-top: 190px;
+}
+
+#ld {
+  margin-top: -25px;
+  margin-left: -15px;
+  z-index: 0;
+}
+
+#captura-1-1 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
+}
+
+#captura-1-2 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #00bf24;
+}
+
+#captura-1-3 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
+}
+
+.wr-captura-1 > button {
+  margin-left: 18%;
+  width: 65%;
+  background: #00d729;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.traco {
+  width: 70px;
+  height: 5px;
+  background: #c4c4c4;
+  margin-bottom: 5px;
+}
+
+#mentoria {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #b2626f;
+}
+
+#sub-mentoria {
+  font-family: "Italianno";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 61px;
+  line-height: 76px;
+
+  color: #8985b0;
+}
+
+.mentoria-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #333333;
+}
