@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   background-color: #f7f3f2;
+  width: 100%;
 }
 
 #logo {
@@ -109,7 +110,7 @@ body {
   color: #333333;
 }
 
-.wr-captura-1 > button {
+.button-buy {
   margin-left: 18%;
   width: 65%;
   background: #00d729;
@@ -159,4 +160,81 @@ body {
   line-height: 25px;
 
   color: #333333;
+}
+
+#why {
+  background-color: #8985b0;
+  background-image: url("./images/background-cliente.png");
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 668px;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#h-why {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.why-paper {
+  background: #ffffff;
+  height: 302px;
+  width: 100%;
+  box-shadow: 0px 16px 28px -1px rgba(14, 31, 53, 0.18);
+  border-radius: 12px;
+}
+
+.why-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #8985b0;
+}
+
+#h-less {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #b2626f;
+}
+
+#lessions li {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.3em;
+  position: relative;
+  margin-bottom: 3.5em;
+
+  color: #333333;
+}
+
+#lessions ul {
+  columns: 3;
+}
+
+#lessions li:before {
+  content: url("./images/check_circle.svg");
+  position: absolute;
+  left: 0;
 }
