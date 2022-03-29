@@ -4,6 +4,10 @@ body {
   width: 100%;
 }
 
+/* .row {
+  height: 100vh;
+} */
+
 #logo {
   padding-top: 17px;
 }
@@ -237,4 +241,133 @@ body {
   content: url("./images/check_circle.svg");
   position: absolute;
   left: 0;
+}
+
+#receive {
+  background-image: url("./images/fundo-lessions-2.png");
+}
+
+#receive .rec .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+#receive .rec .text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+
+#receive .rec {
+  height: 246px;
+  background: #8985b0;
+  box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+  border-radius: 12px;
+}
+
+#receive .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #b2626f;
+}
+
+#bonus .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #b2626f;
+}
+
+#bonus > .header:after {
+  content: url("./images/estrelas-2.svg");
+  position: relative;
+  left: 45%;
+}
+
+#bonus img {
+  margin-top: -3.7rem;
+  width: 100%;
+}
+
+#bonus .rec {
+  background: #e8d6dd;
+  /* sombra baixa */
+
+  box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+  border-radius: 12px;
+}
+
+#bonus .rec .text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.23rem;
+  /* line-height: 37.5px; */
+
+  color: #8985b0;
+}
+
+#bonus .normal {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
+}
+
+#bonus .normal > strong {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 58px;
+  text-align: center;
+
+  color: #00bf24;
+}
+
+#bonus .discount {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+  text-decoration-line: line-through;
+
+  color: #b2626f;
+}
+
+.h-45 {
+  height: 43% !important;
 }
