@@ -1,0 +1,529 @@
+body {
+  overflow-x: hidden;
+  background-color: #f7f3f2;
+  width: 100%;
+}
+
+/* .row {
+  height: 100vh;
+} */
+
+#logo {
+  padding-top: 1.063rem;
+}
+#logo > img {
+  height: 90%;
+  width: 90%;
+}
+
+#about {
+  width: 100%;
+}
+
+.wr-about {
+  height: 41.875rem;
+  background-image: url("./images/fundo-about.png");
+}
+
+#about-t-1 {
+  padding-top: 1.563rem;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#about-t-2 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.video {
+  position: absolute;
+  width: 74%;
+  height: 90vh;
+  left: 13%;
+  top: 63vh;
+  z-index: 100000;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.video > video {
+  width: 100%;
+  height: 100%;
+}
+
+#entregas {
+  padding-top: 11.875rem;
+}
+
+#ld {
+  margin-top: -1.563rem;
+  margin-left: -0.938rem;
+  z-index: 0;
+}
+
+.captura-1-1 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
+}
+
+.captura-1-2 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 3.875rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #00bf24;
+}
+
+.captura-1-3 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
+}
+
+.button-buy {
+  margin-left: 18%;
+  width: 65%;
+  background: #00d729;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.traco {
+  width: 4.375rem;
+  height: 0.313rem;
+  background: #c4c4c4;
+  margin-bottom: 0.313rem;
+}
+
+#mentoria {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  color: #b2626f;
+}
+
+#sub-mentoria {
+  font-family: "Italianno";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.813rem;
+  line-height: 4.75rem;
+
+  color: #8985b0;
+}
+
+.mentoria-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+
+  color: #333333;
+}
+
+#why {
+  background-color: #8985b0;
+  background-image: url("./images/background-cliente.png");
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 41.75rem;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+}
+
+#h-why {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  color: #ffffff;
+}
+
+.why-paper {
+  background: #ffffff;
+  height: 18.875rem;
+  width: 100%;
+  box-shadow: 0px 16px 28px -1px rgba(14, 31, 53, 0.18);
+  border-radius: 12px;
+}
+
+.why-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  text-align: center;
+
+  color: #8985b0;
+}
+
+#h-less {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #b2626f;
+}
+
+#lessions li {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+  /* identical to box height */
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.3em;
+  position: relative;
+  margin-bottom: 3.5em;
+
+  color: #333333;
+}
+
+#lessions ul {
+  columns: 3;
+}
+
+#lessions li:before {
+  content: url("./images/check_circle.svg");
+  position: absolute;
+  left: 0;
+}
+
+#receive {
+  background-image: url("./images/fundo-lessions-2.png");
+}
+
+#receive .rec .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.header.white {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+#receive .rec .text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+
+  color: #ffffff;
+}
+
+.sub-head.white {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+
+  color: #ffffff;
+}
+
+#receive .rec {
+  height: 15.375rem;
+  background: #8985b0;
+  box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+  border-radius: 12px;
+}
+
+#receive .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #b2626f;
+}
+
+#bonus .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #b2626f;
+}
+
+#bonus > .header:after {
+  content: url("./images/estrelas-2.svg");
+  position: relative;
+  left: 45%;
+}
+
+#bonus img {
+  margin-top: -3.7rem;
+  width: 100%;
+}
+
+#bonus .rec {
+  background: #e8d6dd;
+  /* sombra baixa */
+
+  box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+  border-radius: 12px;
+}
+
+#bonus .rec .text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.23rem;
+  /* line-height: 2.344rem; */
+
+  color: #8985b0;
+}
+
+#bonus .normal {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #333333;
+}
+
+#bonus .normal > strong {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.875rem;
+  line-height: 3.625rem;
+  text-align: center;
+
+  color: #00bf24;
+}
+
+#bonus .discount {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  text-align: center;
+  text-decoration-line: line-through;
+
+  color: #b2626f;
+}
+
+.h-45 {
+  height: 43% !important;
+}
+
+#cert {
+  background-image: url("./images/fundo-cert.png");
+}
+
+.list-ab .col-1 {
+  /* margin-right: 1rem; */
+  padding: 0px !important;
+  height: 1.5rem;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+
+  color: #333333;
+}
+
+#quem .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  color: #b2626f;
+}
+
+#quem .name {
+  font-family: "Italianno";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.375rem;
+  /* identical to box height */
+
+  color: #8985b0;
+}
+
+#quem .text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+
+  color: #333333;
+}
+
+#prova {
+  background-image: url("./images/fundo-prova.png");
+}
+
+#prova .text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.563rem;
+  line-height: 1.938rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#whatsapp {
+  background-color: #26cc64;
+}
+
+#instagram .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  color: #b2626f;
+}
+
+#faq .header {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  /* identical to box height */
+
+  color: #b2626f;
+}
+
+#accordionExample .card {
+  background: #8985b0;
+}
+
+#accordionExample .btn {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.563rem;
+  line-height: 1.938rem;
+
+  color: #ffffff;
+}
+
+#accordionExample .card-body {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.563rem;
+
+  color: #ffffff;
+}
+
+footer {
+  margin-top: 15.6rem;
+  width: 100%;
+  background: #b2626f;
+}
+
+footer p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.938rem;
+  line-height: 1.188rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+img {
+  width: 100%;
+}

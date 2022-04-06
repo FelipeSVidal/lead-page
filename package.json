@@ -1,0 +1,12 @@
+{
+  "name": "Lead-Page-Tarcira",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FelipeSVidal/lead-page.git",
+  "author": "<felipedesousavidal@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rfs": "^9.0.6",
+    "sass": "^1.49.11"
+  }
+}
