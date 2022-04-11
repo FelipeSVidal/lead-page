@@ -4,583 +4,1093 @@ body {
   width: 100%;
 }
 
-#logo {
-  padding-top: 1.063rem;
-}
-#logo > img {
-  height: 90%;
-  width: 90%;
-}
+/* .row {
+  height: 100vh;
+} */
 
-#about {
-  width: 100%;
-}
+@media (min-width: 992px) {
+  #logo {
+    padding-top: 1.063rem;
+  }
+  #logo > img {
+    height: 90%;
+    width: 90%;
+  }
 
-.wr-about {
-  height: 41.875rem;
-  background-image: url("./images/fundo-about.png");
-}
+  #about {
+    width: 100%;
+  }
 
-#about-t-1 {
-  padding-top: calc(1.2813rem + 0.3756vw);
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #ffffff;
-}
-@media (min-width: 1200px) {
+  .wr-about {
+    height: 41.875rem;
+    background-image: url("./images/fundo-about.png");
+  }
+
   #about-t-1 {
     padding-top: 1.563rem;
-  }
-}
-@media (min-width: 1200px) {
-  #about-t-1 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
+    line-height: 2.375rem;
+    text-align: center;
+
+    color: #ffffff;
   }
-}
 
-#about-t-2 {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  text-align: center;
-  color: #ffffff;
-}
+  #about-t-2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+    text-align: center;
 
-.video {
-  position: absolute;
-  width: 74%;
-  height: 90vh;
-  left: 13%;
-  top: 63vh;
-  z-index: 100000;
-  border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+
+  .video {
+    position: absolute;
+    width: 74%;
+    height: 90vh;
+    left: 13%;
+    /* top: 63vh; */
+    top: 70%;
+    z-index: 100000;
+    /* border: 1px solid #ffffff;
   border-radius: 10px;
-  background-color: blue;
-}
-.video > video {
-  width: 100%;
-  height: 100%;
-}
+  background-color: blue; */
+  }
 
-#entregas {
-  padding-top: calc(2.3125rem + 12.75vw);
-}
-@media (min-width: 1200px) {
+  .video > video {
+    width: 100%;
+    /* height: 100%; */
+  }
+
   #entregas {
     padding-top: 11.875rem;
   }
-}
 
-#ld {
-  margin-top: calc(-1.2813rem - 0.3756vw);
-  margin-left: -0.938rem;
-  z-index: 0;
-}
-@media (min-width: 1200px) {
   #ld {
     margin-top: -1.563rem;
+    margin-left: -0.938rem;
+    z-index: 0;
   }
-}
 
-.captura-1-1 {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #333333;
-}
-@media (min-width: 1200px) {
   .captura-1-1 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
-  }
-}
+    line-height: 2.375rem;
+    /* identical to box height */
 
-.captura-1-2 {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.4375rem + 2.25vw);
-  line-height: 3.875rem;
-  text-align: center;
-  color: #00bf24;
-}
-@media (min-width: 1200px) {
+    text-align: center;
+
+    color: #333333;
+  }
+
   .captura-1-2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 3.125rem;
-  }
-}
+    line-height: 3.875rem;
+    /* identical to box height */
 
-.captura-1-3 {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #333333;
-}
-@media (min-width: 1200px) {
+    text-align: center;
+
+    color: #00bf24;
+  }
+
   .captura-1-3 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
-  }
-}
+    line-height: 2.375rem;
+    /* identical to box height */
 
-.button-buy {
-  margin-left: 18%;
-  width: 65%;
-  background: #00d729;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #ffffff;
-}
-@media (min-width: 1200px) {
+    text-align: center;
+
+    color: #333333;
+  }
+
   .button-buy {
+    margin-left: 18%;
+    width: 65%;
+    background: #00d729;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
+    line-height: 2.375rem;
+    text-align: center;
+
+    color: #ffffff;
   }
-}
 
-.traco {
-  width: 4.375rem;
-  height: 0.313rem;
-  background: #c4c4c4;
-  margin-bottom: 0.313rem;
-}
+  .wr-mentoria {
+    text-align: left;
+  }
 
-#mentoria {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
+  .traco {
+    width: 4.375rem;
+    height: 0.313rem;
+    background: #c4c4c4;
+    margin-bottom: 0.313rem;
+  }
+
   #mentoria {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
-  }
-}
+    line-height: 2.375rem;
+    /* identical to box height */
 
-#sub-mentoria {
-  font-family: "Italianno";
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc(1.5063rem + 3.0756vw);
-  line-height: 4.75rem;
-  color: #8985b0;
-}
-@media (min-width: 1200px) {
+    color: #b2626f;
+  }
+
   #sub-mentoria {
+    font-family: "Italianno";
+    font-style: normal;
+    font-weight: 400;
     font-size: 3.813rem;
+    line-height: 4.75rem;
+
+    color: #8985b0;
   }
-}
 
-.mentoria-text {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  color: #333333;
-}
+  .mentoria-text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
 
-#why {
-  background-color: #8985b0;
-  background-image: url("./images/background-cliente.png");
-  background-size: cover;
-  background-blend-mode: multiply;
-  height: 41.75rem;
-  background-repeat: no-repeat;
-}
+    color: #333333;
+  }
 
-#h-why {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  color: #ffffff;
-}
-@media (min-width: 1200px) {
+  #why {
+    background-image: url("./images/fundo-cert.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 41.75rem;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+  }
+
   #h-why {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
+    line-height: 2.375rem;
+    color: #ffffff;
   }
-}
 
-.why-paper {
-  background: #ffffff;
-  height: 18.875rem;
-  width: 100%;
-  box-shadow: 0px 16px 28px -1px rgba(14, 31, 53, 0.18);
-  border-radius: 12px;
-}
+  .why-paper {
+    background: #ffffff;
+    height: 18.875rem;
+    box-shadow: 0px 16px 28px -1px rgba(14, 31, 53, 0.18);
+    border-radius: 12px;
+  }
 
-.why-text {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #8985b0;
-}
-@media (min-width: 1200px) {
   .why-text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 600;
     font-size: 1.875rem;
-  }
-}
+    line-height: 2.375rem;
+    text-align: center;
 
-#h-less {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
+    color: #8985b0;
+  }
+
   #h-less {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #b2626f;
   }
-}
 
-#lessions li {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  list-style: none;
-  margin-left: 0;
-  padding-left: 1.3em;
-  position: relative;
-  margin-bottom: 3.5em;
-  color: #333333;
-}
-#lessions li:before {
-  content: url("./images/check_circle.svg");
-  position: absolute;
-  left: 0;
-}
-#lessions ul {
-  columns: 3;
-}
+  #lessions li {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+    /* identical to box height */
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.3em;
+    position: relative;
+    margin-bottom: 3.5em;
 
-#receive {
-  background-image: url("./images/fundo-lessions-2.png");
-}
-#receive .rec {
-  height: 15.375rem;
-  background: #8985b0;
-  box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
-  border-radius: 12px;
-}
-#receive .rec .header {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  color: #ffffff;
-}
-@media (min-width: 1200px) {
+    color: #333333;
+  }
+
+  #lessions ul {
+    columns: 3;
+  }
+
+  #lessions li:before {
+    content: url("./images/check_circle.svg");
+    position: absolute;
+    left: 0;
+  }
+
+  #receive {
+    background-image: url("./images/fundo-lessions-2.png");
+  }
+
   #receive .rec .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
-  }
-}
-#receive .rec .text {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  color: #ffffff;
-}
-#receive .header {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
-  #receive .header {
-    font-size: 1.875rem;
-  }
-}
+    line-height: 2.375rem;
+    /* identical to box height */
 
-.header.white {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  color: #ffffff;
-}
-@media (min-width: 1200px) {
+    color: #ffffff;
+  }
+
   .header.white {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    color: #ffffff;
   }
-}
 
-.sub-head.white {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  color: #ffffff;
-}
+  #receive .rec .text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
 
-#bonus .header {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
+    color: #ffffff;
+  }
+
+  .sub-head.white {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+
+    color: #ffffff;
+  }
+
+  #receive .rec {
+    height: 15.375rem;
+    background: #8985b0;
+    box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+    border-radius: 12px;
+  }
+
+  #receive .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #b2626f;
+  }
+
   #bonus .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #b2626f;
+  }
+
+  #bonus > .header:after {
+    content: url("./images/estrelas-2.svg");
+    position: relative;
+    left: 45%;
+  }
+
+  #bonus img {
+    margin-top: -3.7rem;
+    width: 100%;
+  }
+
+  #bonus .rec {
+    background: #e8d6dd;
+    /* sombra baixa */
+
+    box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+    border-radius: 12px;
+  }
+
+  #bonus .rec .text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.23rem;
+    /* line-height: 2.344rem; */
+
+    color: #8985b0;
+  }
+
+  #bonus .normal {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #333333;
+  }
+
+  #bonus .normal > strong {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: 3.625rem;
+    text-align: center;
+
+    color: #00bf24;
+  }
+
+  #bonus .discount {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration-line: line-through;
+
+    color: #b2626f;
+  }
+
+  .h-45 {
+    height: 43% !important;
+  }
+
+  #cert {
+    background-image: url("./images/fundo-cert.png");
+  }
+
+  .list-ab .col-1 {
+    /* margin-right: 1rem; */
+    padding: 0px !important;
+    height: 1.5rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+
+    color: #333333;
+  }
+
+  #quem .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    color: #b2626f;
+  }
+
+  #quem .name {
+    font-family: "Italianno";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 4.375rem;
+    /* identical to box height */
+
+    color: #8985b0;
+  }
+
+  #quem .text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+
+    color: #333333;
+  }
+
+  #prova {
+    background-image: url("./images/fundo-prova.png");
+  }
+
+  #prova .text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.563rem;
+    line-height: 1.938rem;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  #whatsapp {
+    background-color: #26cc64;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #ffffff;
+  }
+
+  #instagram .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    color: #b2626f;
+  }
+
+  #faq .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    color: #b2626f;
+  }
+
+  #accordionExample .card {
+    background: #8985b0;
+  }
+
+  #accordionExample .btn {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.563rem;
+    line-height: 1.938rem;
+
+    color: #ffffff;
+  }
+
+  #accordionExample .card-body {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 7.8rem;
+    width: 100%;
+    background: #b2626f;
+  }
+
+  footer p {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.938rem;
+    line-height: 1.188rem;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  img {
+    width: 100%;
   }
 }
-#bonus > .header:after {
+
+@media (max-width: 991px) {
+  #logo {
+    padding-top: 1.063rem;
+  }
+  #logo > img {
+    height: 90%;
+    width: 90%;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  .wr-about {
+    height: 20.875rem;
+    background-image: url("./images/fundo-about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+  }
+
+  #about-t-1 {
+    padding-top: 1.563rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  #about-t-2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  .video {
+    position: absolute;
+    width: 90%;
+    /* height: 90vh; */
+    left: 5%;
+    /* top: 63vh; */
+    top: 40vh;
+    z-index: 100000;
+    /* border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: blue; */
+  }
+
+  .video > video,
+  .video > iframe {
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  #entregas {
+    padding-top: 20vh;
+  }
+
+  #ld {
+    margin-top: -1.563rem;
+    margin-left: -0.938rem;
+    z-index: 0;
+  }
+
+  .captura-1-1 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #333333;
+  }
+
+  .captura-1-2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #00bf24;
+  }
+
+  .captura-1-3 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #333333;
+  }
+
+  .button-buy {
+    margin-left: 18%;
+    width: 65%;
+    background: #00d729;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  .wr-mentoria {
+    text-align: center;
+  }
+
+  .traco {
+    margin-left: calc(50% - 4.375rem / 2);
+    width: 4.375rem;
+    height: 0.313rem;
+    background: #c4c4c4;
+    margin-bottom: 0.313rem;
+  }
+
+  #mentoria {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    /* identical to box height */
+
+    color: #b2626f;
+  }
+
+  #sub-mentoria {
+    font-family: "Italianno";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.813rem;
+    line-height: 4.75rem;
+
+    color: #8985b0;
+  }
+
+  .mentoria-text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+
+    color: #333333;
+  }
+
+  #why {
+    background-image: url("./images/fundo-cert.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* height: 41.75rem; */
+    /* width: 100%; */
+    background-repeat: no-repeat;
+  }
+
+  #h-why {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  .why-paper {
+    background: #ffffff;
+    /* height: 18.875rem; */
+    box-shadow: 0px 16px 28px -1px rgba(14, 31, 53, 0.18);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .why-text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #8985b0;
+  }
+
+  #h-less {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #b2626f;
+  }
+
+  #lessions li {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+    list-style: none;
+    margin-left: 0;
+    padding-left: 2.3em;
+    position: relative;
+    margin-bottom: 1.5em;
+
+    color: #333333;
+  }
+
+  #lessions ul {
+    /* columns: 3; */
+    padding-inline-start: 0px;
+  }
+
+  #lessions li:before {
+    content: url("./images/check_circle.svg");
+    position: absolute;
+    left: 0;
+  }
+
+  #receive {
+    background-image: url("./images/fundo-lessions-2.png");
+  }
+
+  #receive .rec .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  .header.white {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  #receive .rec .text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #ffffff;
+  }
+
+  .sub-head.white {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #ffffff;
+  }
+
+  #receive .rec {
+    /* height: 15.375rem; */
+    background: #8985b0;
+    box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    padding: 1rem;
+  }
+
+  #receive .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #b2626f;
+  }
+
+  #bonus .header {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #b2626f;
+  }
+
+  #bonus .m-header {
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  /* #bonus > .header:after {
   content: url("./images/estrelas-2.svg");
   position: relative;
   left: 45%;
-}
-#bonus img {
-  margin-top: calc(-1.495rem - 2.94vw);
-  width: 100%;
-}
-@media (min-width: 1200px) {
+} */
+
   #bonus img {
     margin-top: -3.7rem;
+    width: 100%;
   }
-}
-#bonus .rec {
-  background: #e8d6dd;
-  box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
-  border-radius: 12px;
-}
-#bonus .rec .text {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.23rem;
-  color: #8985b0;
-}
-#bonus .normal {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  color: #333333;
-}
-@media (min-width: 1200px) {
+
+  #bonus .rec {
+    background: #e8d6dd;
+    /* sombra baixa */
+
+    box-shadow: 0px 3px 7px rgba(14, 31, 53, 0.12);
+    border-radius: 12px;
+    margin-bottom: 6rem;
+  }
+
+  #gget {
+    margin-bottom: 0px;
+  }
+
+  #bonus .rec .text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #8985b0;
+  }
+
   #bonus .normal {
-    font-size: 1.875rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #333333;
   }
-}
-#bonus .normal > strong {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.4125rem + 1.95vw);
-  line-height: 3.625rem;
-  text-align: center;
-  color: #00bf24;
-}
-@media (min-width: 1200px) {
+
   #bonus .normal > strong {
-    font-size: 2.875rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+
+    color: #00bf24;
   }
-}
-#bonus .discount {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  text-align: center;
-  text-decoration-line: line-through;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
+
   #bonus .discount {
-    font-size: 1.875rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration-line: line-through;
+
+    color: #b2626f;
   }
-}
 
-.h-45 {
-  height: 43% !important;
-}
+  .h-45 {
+    /* height: 23% !important; */
+  }
 
-#cert {
-  background-image: url("./images/fundo-cert.png");
-}
+  #cert {
+    background-image: url("./images/fundo-cert.png");
+  }
 
-.list-ab .col-1 {
-  padding: 0px !important;
-  height: 1.5rem;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  color: #333333;
-}
+  .list-ab .col-1 {
+    /* margin-right: 1rem; */
+    padding: 0px !important;
+    height: 1.5rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
 
-#quem .header {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
+    color: #333333;
+  }
+
   #quem .header {
-    font-size: 1.875rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #b2626f;
   }
-}
-#quem .name {
-  font-family: "Italianno";
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc(1.475rem + 2.7vw);
-  line-height: 4.375rem;
-  color: #8985b0;
-}
-@media (min-width: 1200px) {
+
   #quem .name {
-    font-size: 3.5rem;
-  }
-}
-#quem .text {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  color: #333333;
-}
+    font-family: "Italianno";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 44px;
+    /* identical to box height */
 
-#prova {
-  background-image: url("./images/fundo-prova.png");
-}
-#prova .text {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.2813rem + 0.3756vw);
-  line-height: 1.938rem;
-  text-align: center;
-  color: #ffffff;
-}
-@media (min-width: 1200px) {
+    color: #8985b0;
+  }
+
+  #quem #text {
+    text-align: center;
+  }
+  #quem .text {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #333333;
+  }
+
+  #prova {
+    background-image: url("./images/fundo-prova.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #prova .col {
+    background-color: #8985b0;
+  }
+
   #prova .text {
-    font-size: 1.563rem;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #ffffff;
   }
-}
 
-#whatsapp {
-  background-color: #26cc64;
-}
+  #whatsapp {
+    background-color: #26cc64;
+    font-size: 15px;
+    line-height: 19px;
+    color: #ffffff;
+  }
 
-#instagram .header {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
   #instagram .header {
-    font-size: 1.875rem;
-  }
-}
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
 
-#faq .header {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.3125rem + 0.75vw);
-  line-height: 2.375rem;
-  color: #b2626f;
-}
-@media (min-width: 1200px) {
+    color: #b2626f;
+  }
+
   #faq .header {
-    font-size: 1.875rem;
-  }
-}
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
 
-#accordionExample .card {
-  background: #8985b0;
-}
-#accordionExample .btn {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(1.2813rem + 0.3756vw);
-  line-height: 1.938rem;
-  color: #ffffff;
-}
-@media (min-width: 1200px) {
+    color: #b2626f;
+  }
+
+  #accordionExample .card {
+    background: #8985b0;
+  }
+
   #accordionExample .btn {
-    font-size: 1.563rem;
-  }
-}
-#accordionExample .card-body {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.563rem;
-  color: #ffffff;
-}
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
 
-footer {
-  margin-top: calc(2.685rem + 17.22vw);
-  width: 100%;
-  background: #b2626f;
-}
-@media (min-width: 1200px) {
+    color: #ffffff;
+  }
+
+  #accordionExample .card-body {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #ffffff;
+  }
+
   footer {
-    margin-top: 15.6rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    background: #b2626f;
+  }
+
+  footer p {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  img {
+    width: 100%;
   }
 }
-footer p {
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.938rem;
-  line-height: 1.188rem;
-  text-align: center;
-  color: #ffffff;
-}
-
-img {
-  width: 100%;
-}
-
-/*# sourceMappingURL=index.css.map */

@@ -8,7 +8,48 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "656027928830514");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=656027928830514&ev=PageView&noscript=1"
+    /></noscript>
+
     <!-- Bootstrap CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -28,12 +69,12 @@
   <body>
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col col-3" id="logo">
+        <div class="col col-lg-3 col-6" id="logo">
           <img src="./images/logo.svg" width="100%" />
         </div>
       </div>
       <div class="row justify-content-center wr-about">
-        <div class="col col-9" id="about">
+        <div class="col col-lg-9 col-11" id="about">
           <p id="about-t-1">
             Apenas 2 entre 10 mulheres conhecem o método exclusivo que uso para
             ter a agenda lotada todo dia, se destacar no mercado da beleza e
@@ -48,41 +89,58 @@
         </div>
       </div>
       <div class="video">
-        <video controls>
+        <!-- <video controls>
           <source src="./assets/apresentacao.mp4" />
           Não suportado
-        </video>
+        </video> -->
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube-nocookie.com/embed/MbtlurX4vGQ?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <!-- <iframe width="727" height="409" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
       <div class="row">
-        <div class="col col-2">
-          <img id="le" src="./images/linha-esquerda.svg" />
+        <div class="col col-1 col-lg-2">
+          <!-- <img id="le" src="./images/linha-esquerda.svg" /> -->
         </div>
-        <div class="col col-8">
+        <div class="col col-lg-8 col-10">
           <img id="entregas" src="./images/entregas.png" />
         </div>
         <div class="col col1"></div>
         <div class="col col-1">
-          <img id="ld" src="./images/linha-direita.svg" />
+          <!-- <img id="ld" src="./images/linha-direita.svg" /> -->
         </div>
       </div>
       <div class="row mt-5">
         <div class="col col-1"></div>
         <div class="col col-1"><img src="./images/estrelas.svg" /></div>
         <div class="col col-1"></div>
-        <div class="col col-6 wr-captura-1">
+        <div class="col col-lg-6 col-12 wr-captura-1">
           <p class="captura-1-1">de <s>R$ 1.223</s> Por apenas</p>
-          <p class="captura-1-2">12x de 41,49</p>
+          <p class="captura-1-2">12x de 49,60</p>
           <p class="captura-1-3">Ou à vista por R$ 497,90</p>
-          <button type="button" class="btn btn-success button-buy">
+          <button
+            type="button"
+            class="btn btn-success button-buy"
+            onclick="handleClick()"
+          >
             Sim, quero viver do design de sobrancelhas!
           </button>
+          <img class="mt-2" src="images/formas.png" width="100%" />
         </div>
         <div class="col col-1"></div>
         <div class="col col-1"><img src="./images/ondinhas.svg" /></div>
       </div>
       <div class="row mt-5 justify-content-center">
-        <div class="col col-4">
+        <div class="col d-block d-lg-none col-8">
+          <img src="./images/olhos.svg" />
+        </div>
+        <div class="col col-lg-4 col-12 wr-mentoria">
           <p id="mentoria">Mentoria</p>
           <p id="sub-mentoria">Sobrancelha impecável</p>
           <div class="traco"></div>
@@ -101,17 +159,17 @@
             <strong>mesmo que esteja começando do absoluto zero.</strong>
           </p>
         </div>
-        <div class="col col-4">
+        <div class="col d-lg-block d-none col-4">
           <img src="./images/olhos.svg" />
         </div>
       </div>
       <div class="row" id="why">
         <div class="col mt-5 col-12 text-center">
-          <p id="h-why">Para quem é a mentoria?</p>
+          <p class="mt-4 mt-lg-0" id="h-why">Para quem é a mentoria?</p>
         </div>
         <div class="col col-12 container">
           <div class="row justify-content-center">
-            <div class="col col-3 why-paper container">
+            <div class="col col-lg-3 col-10 why-paper container">
               <div class="row">
                 <div class="col col-4 offset-4 mt-4">
                   <img src="./images/graph-up.svg" height="100%" />
@@ -121,7 +179,7 @@
                 </div>
               </div>
             </div>
-            <div class="col col-3 why-paper container">
+            <div class="col col-lg-3 col-10 why-paper container">
               <div class="row">
                 <div class="col col-4 offset-4 mt-4">
                   <img src="./images/lamp.svg" height="100%" />
@@ -131,7 +189,7 @@
                 </div>
               </div>
             </div>
-            <div class="col col-3 why-paper container">
+            <div class="col col-lg-3 col-10 why-paper container">
               <div class="row">
                 <div class="col col-4 offset-4 mt-4">
                   <img src="./images/pork.svg" height="100%" />
@@ -143,8 +201,12 @@
             </div>
           </div>
         </div>
-        <div class="col col-6 offset-3">
-          <button type="button" class="btn btn-success button-buy">
+        <div class="col col-lg-6 col-12 offset-lg-3 pb-4">
+          <button
+            type="button"
+            class="btn btn-success button-buy"
+            onclick="handleClick()"
+          >
             Essa mentoria foi feita pra mim!
           </button>
         </div>
@@ -154,7 +216,7 @@
         <div class="col col-11 text-center">
           <p id="h-less">Veja o que você vai aprender</p>
         </div>
-        <div class="col col-10 offset-1 mt-5">
+        <div class="col col-12 mt-5">
           <ul>
             <li>Normas da ANVISA</li>
             <li>Visagismo</li>
@@ -174,13 +236,13 @@
         </div>
       </div>
       <div class="row pt-5" id="receive">
-        <div class="col col-12 text-center pt-5 header">
+        <div class="col col-12 text-center pt-lg-5 header">
           <p>O que você irá receber</p>
         </div>
-        <div class="col col-9 offset-2 mt-5">
+        <div class="col col-lg-9 col-12 offset-lg-2 mt-lg-5">
           <div class="container">
             <div class="row">
-              <div class="col col-5 mr-4 rec pt-3">
+              <div class="col col-lg-5 col-12 mr-4 rec pt-3">
                 <p class="header">Mentoria ao vivo</p>
                 <p class="text">
                   Teremos vários encontros ao vivo onde eu abordo com
@@ -188,7 +250,7 @@
                   tudo Design de sobrancelhas.
                 </p>
               </div>
-              <div class="col col-5 rec pt-3">
+              <div class="col col-lg-5 col-12 rec pt-3">
                 <p class="header">Grupo de networking</p>
                 <p class="text">
                   Temos uma comunidade no telegram onde todos mentorados
@@ -198,10 +260,10 @@
             </div>
           </div>
         </div>
-        <div class="col col-9 offset-2 mt-4">
+        <div class="col col-lg-9 col-12 offset-lg-2 mt-lg-5">
           <div class="container">
             <div class="row">
-              <div class="col col-5 mr-4 rec pt-3">
+              <div class="col col-lg-5 col-12 mr-4 rec pt-3">
                 <p class="header pt-2">Faça sua pergunta</p>
                 <p class="text">
                   Em toda mentoria ao vivo nós temos um momento para você tirar
@@ -210,7 +272,7 @@
                   mentorados.
                 </p>
               </div>
-              <div class="col col-5 rec pt-3">
+              <div class="col col-lg-5 col-12 rec pt-3 mb-5">
                 <p class="header">Gravações</p>
                 <p class="text">
                   Gravações de todo conteúdo! Pelo mesmo valor você vai ter
@@ -223,49 +285,57 @@
         </div>
       </div>
       <div class="row pt-5" id="bonus">
-        <div class="col col-12 text-center pt-5 header">
+        <div class="col col-12 text-center pt-lg-5 mb-4 mb-lg-0 header">
           <p>E hoje você leva 3 Bônus especiais</p>
         </div>
-        <div class="col col-10 offset-2" style="margin-top: 3rem !important">
+        <div
+          class="col col-12 col-lg-11 offset-lg-1"
+          style="margin-top: 3rem !important"
+        >
           <div class="container">
             <div class="row">
-              <div class="col col-3 mr-1 rec justify-content-center">
+              <div
+                class="col col-lg-3 offset-lg-1 col-12 mr-1 rec justify-content-center"
+              >
                 <div class="col col-8 offset-2">
                   <img class="rounded-circle" src="./images/bonus1.svg" />
                 </div>
-                <p class="header">Bônus 1</p>
+                <p class="header m-header">Bônus 1</p>
                 <div class="col col-12 text-center h-45">
                   <span class="header">Ebook</span>
                   <span class="text">método Sobrancelha Impecável</span>
                 </div>
                 <div class="col col-12 text-center">
-                  <p class="subinfo mt-4">Custa R$ 147,90</p>
+                  <p class="subinfo mt-lg-2 mt-4 pb-2">Custa R$ 147,90</p>
                 </div>
               </div>
-              <div class="col col-3 mr-1 rec justify-content-center">
+              <div class="col col-lg-3 col-12 mr-1 rec justify-content-center">
                 <div class="col col-8 offset-2">
                   <img class="rounded-circle" src="./images/bonus2.svg" />
                 </div>
-                <p class="header">Bônus 2</p>
+                <p class="header m-header">Bônus 2</p>
                 <div class="col col-12 text-center h-45">
                   <span class="header">Suporte total</span>
                   <span class="text">de 3 mêses com a professora</span>
                 </div>
                 <div class="col col-12 text-center">
-                  <p class="subinfo mt-4">Custa R$ 3.997</p>
+                  <p class="subinfo mt-lg-2 mt-4 pb-2">Custa R$ 3.997</p>
                 </div>
               </div>
-              <div class="col col-3 mr-1 rec justify-content-center">
+              <div
+                id="gget"
+                class="col col-lg-3 col-12 mr-1 rec mb-0 justify-content-center"
+              >
                 <div class="col col-8 offset-2">
                   <img class="rounded-circle" src="./images/bonus3.svg" />
                 </div>
-                <p class="header">Bônus 3</p>
+                <p class="header m-header">Bônus 3</p>
                 <div class="col col-12 text-center h-45">
                   <span class="header">Grupo exclusivo</span>
                   <span class="text">no telegram com mentorados</span>
                 </div>
                 <div class="col col-12 text-center">
-                  <p class="subinfo mt-4">Custa R$ 497,00</p>
+                  <p class="subinfo mt-lg-2 mt-4 pb-2">Custa R$ 497,00</p>
                 </div>
               </div>
             </div>
@@ -277,20 +347,24 @@
         <div class="col col-6 offset-3 text-center">
           <p class="discount">R$ 4641,00</p>
         </div>
-        <div class="col col-6 offset-3 text-center">
+        <div class="col col-lg-6 col-12 offset-lg-3 text-center">
           <p class="normal">
             E eles sairão <strong>grátis</strong> para você entrando na mentoria
             hoje!
           </p>
         </div>
-        <div class="col col-6 offset-3 mt-2">
-          <button type="button" class="btn btn-success button-buy">
+        <div class="col col-6 offset-3 mt-2 d-none d-lg-block">
+          <button
+            type="button"
+            class="btn btn-success button-buy"
+            onclick="handleClick()"
+          >
             Quero adquirir todos os bônus especiais!
           </button>
         </div>
       </div>
       <div class="row">
-        <div class="col col-2 offset-1 ml-1">
+        <div class="col col-lg-2 col-4 offset-lg-1 ml-lg-1 d-none d-lg-block">
           <img src="./images/bolinhas.svg" />
         </div>
       </div>
@@ -299,11 +373,11 @@
           <p class="header white">Certificado de conclusão</p>
           <br />
         </div>
-        <div class="col col-8 offset-2 text-center">
+        <div class="col col-lg-8 col-12 offset-lg-2 text-center">
           <p class="sub-head white">
             Sim o treinamento conta com certificado digital!
           </p>
-          <p>
+          <p class="d-none d-lg-block">
             <br />
           </p>
 
@@ -313,7 +387,7 @@
             Impecável.
           </p>
         </div>
-        <div class="col col-4 offset-4">
+        <div class="col col-lg-4 offset-lg-4 col-10 offset-1">
           <img src="./images/certificado.png" width="100%" />
         </div>
       </div>
@@ -321,10 +395,10 @@
         <div class="col col-1">
           <img src="./images/estrelas-2.svg" />
         </div>
-        <div class="col col-5">
+        <div class="col col-lg-5 col-12">
           <img src="./images/tarcira.png" width="100%" />
         </div>
-        <div class="col col-4">
+        <div id="text" class="col col-lg-4 col-12">
           <p class="header">Quem sou eu?</p>
           <p class="name">Tarcira Martins</p>
           <p class="text">
@@ -335,38 +409,38 @@
           </p>
           <div class="container list-ab">
             <div class="row">
-              <div class="col col-1">
+              <div class="col col-1 offset-lg-0 offset-1">
                 <img
                   src="./images/sombrancelha.svg"
                   width="100%"
                   height="100%"
                 />
               </div>
-              <div class="col col-11">
+              <div class="col col-lg-11 col-lg-10">
                 <p>Design de sobrancelhas</p>
               </div>
             </div>
             <div class="row">
-              <div class="col col-1">
+              <div class="col col-1 offset-lg-0 offset-1">
                 <img src="./images/eyebrow.svg" width="100%" height="100%" />
               </div>
-              <div class="col col-11">
+              <div class="col col-lg-11 col-lg-10">
                 <p>Micropigmentação em sobrancelhas</p>
               </div>
             </div>
             <div class="row">
-              <div class="col col-1">
+              <div class="col col-1 offset-lg-0 offset-1">
                 <img src="./images/dep.svg" width="100%" height="100%" />
               </div>
-              <div class="col col-11">
+              <div class="col col-lg-11 col-lg-10">
                 <p>Depilações em geral</p>
               </div>
             </div>
             <div class="row">
-              <div class="col col-1">
+              <div class="col col-1 offset-lg-0 offset-1">
                 <img src="./images/unhas.svg" width="100%" height="100%" />
               </div>
-              <div class="col col-11">
+              <div class="col col-lg-11 col-lg-10">
                 <p>Unhas alongadas</p>
               </div>
             </div>
@@ -383,60 +457,75 @@
             depois de aplicarem o método sobrancelha impecável.
           </p>
         </div>
-        <div class="col col-2 offset-2">
-          <img src="./images/whatsapp-1.png" width="100%" />
+        <div class="col col-lg-2 offset-lg-2 col-12">
+          <img src="./images/whatsapp-1.png" width="100%" height="100%" />
         </div>
-        <div class="col col-2">
-          <img src="./images/whatsapp-2.png" width="100%" />
+        <div class="col col-lg-2 col-12">
+          <img src="./images/whatsapp-2.png" width="100%" height="100%" />
         </div>
-        <div class="col col-2">
-          <img src="./images/whatsapp-3.png" width="100%" />
+        <div class="col col-lg-2 col-12">
+          <img src="./images/whatsapp-3.png" width="100%" height="100%" />
         </div>
-        <div class="col col-2">
-          <img src="./images/whatsapp-4.png" width="100%" />
+        <div class="col col-lg-2 col-12">
+          <img src="./images/whatsapp-4.png" width="100%" height="100%" />
         </div>
-        <div class="col col-2 offset-2">
-          <img src="./images/whatsapp-5.png" width="100%" />
+        <div class="col col-lg-2 offset-lg-2 col-12">
+          <img src="./images/whatsapp-5.png" width="100%" height="100%" />
         </div>
-        <div class="col col-2">
-          <img src="./images/whatsapp-6.png" width="100%" />
+        <div class="col col-lg-2 col-12">
+          <img src="./images/whatsapp-6.png" width="100%" height="100%" />
         </div>
-        <div class="col col-2">
-          <img src="./images/whatsapp-7.png" width="100%" />
+        <div class="col col-lg-2 col-12">
+          <img src="./images/whatsapp-7.png" width="100%" height="100%" />
         </div>
-        <div class="col col-2">
-          <img src="./images/whatsapp-8.png" width="100%" />
+        <div class="col col-lg-2 col-12">
+          <img src="./images/whatsapp-8.png" width="100%" height="100%" />
         </div>
-        <div class="col col-8 offset-2" style="margin-bottom: 1rem">
-          <button type="button" class="btn btn-success button-buy">
+        <div
+          class="col col-8 offset-2 d-none d-lg-block"
+          style="margin-bottom: 1rem"
+        >
+          <button
+            type="button"
+            class="btn btn-success button-buy"
+            onclick="handleClick()"
+          >
             Quero ter os mesmos resultados
           </button>
         </div>
       </div>
       <div class="row pt-5" id="captura2">
-        <div class="col col-6 offset-3 wr-captura-1">
+        <div class="col col-lg-6 col-12 offset-lg-3 wr-captura-1">
           <p class="captura-1-1">de <s>R$ 1.223</s> Por apenas</p>
-          <p class="captura-1-2">12x de 41,49</p>
+          <p class="captura-1-2">12x de 49,60</p>
           <p class="captura-1-3">Ou à vista por R$ 497,90</p>
-          <button type="button" class="btn btn-success button-buy">
+          <button
+            type="button"
+            class="btn btn-success button-buy"
+            onclick="handleClick()"
+          >
             Sim, quero viver do design de sobrancelhas!
           </button>
+          <img class="mt-2" src="images/formas.png" width="100%" />
         </div>
       </div>
       <div class="row mt-5 pt-2 pb-2" id="whatsapp">
-        <div class="col col-2 offset-4">
+        <div class="col col-lg-2 offset-lg-4 col-12 text-center mb-1 mb-lg-0">
           <span>Tem duvídas? </span><br />
           <span>fale conosco: </span>
         </div>
-        <div class="col col-3">
-          <a href="#"><img src="./images/whatsapp-b.png" width="100%" /></a>
+        <div class="col col-lg-3 col-10 offset-1 offset-lg-0">
+          <a
+            href="https://api.whatsapp.com/send/?phone=5588999390681&text&app_absent=0"
+            ><img src="./images/whatsapp-b.png" width="100%"
+          /></a>
         </div>
       </div>
       <div class="row mt-5" id="instagram">
         <div class="col col-12 text-center">
           <p class="header">Rede Social</p>
         </div>
-        <div class="col col-6 offset-3">
+        <div class="col col-lg-6 offset-lg-3 col-10 offset-1">
           <a href="https://www.instagram.com/tarciramartins/" target="_blank"
             ><img src="./images/instagram.png" width="100%"
           /></a>
@@ -498,8 +587,8 @@
                 data-parent="#accordionExample"
               >
                 <div class="card-body">
-                  Você tem as opções de pagamento via cartões de crédito,
-                  boleto, PIX ou paypal.
+                  Você tem as opções de pagamento via cartões de crédito, PIX ou
+                  paypal.
                 </div>
               </div>
             </div>
@@ -590,8 +679,12 @@
             </div>
           </div>
         </div>
-        <div class="col col-6 offset-3 mt-5">
-          <button type="button" class="btn btn-success button-buy mt-5">
+        <div class="col col-lg-6 offset-lg-3 mt-3 mb-3 col-10 offset-1">
+          <button
+            type="button"
+            class="btn btn-success button-buy"
+            onclick="handleClick()"
+          >
             Sim, quero me inscrever!
           </button>
         </div>
@@ -599,10 +692,10 @@
     </div>
     <footer>
       <div class="row text-center">
-        <div class="col col-12">
+        <div class="col col-12 pt-2">
           <p>Termos de uso&emsp;&emsp;Políticas de privacidade</p>
         </div>
-        <div class="col col-8 offset-2">
+        <div class="col col-lg-8 offset-lg-2 col-10 offset-1">
           <p>
             Copyright © 2022 - método sobrancelha impecável ® 2022 - CNPJ sob o
             n° 20.764.857/0001-95 - Todos os Direitos Reservados. ESTE SITE NÃO
@@ -629,9 +722,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      alert(
-        "USAR ISSO PRA RESPONSIVIDADE https://github.com/twbs/rfs/tree/v8.1.0"
-      );
+      function handleClick() {
+        location.href = "https://pay.hotmart.com/G45556637S?checkoutMode=10";
+      }
     </script>
   </body>
 </html>
